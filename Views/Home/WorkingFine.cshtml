@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="WorkingFine" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="control-label">Title</label>
+        <input name="input.Title" class="form-control" value="just" />
+        <span class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Body</label>
+        <input name="input.Body" class="form-control" value="click" />
+        <span class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="file" name="input.Image" />
+        </div>
+    </div>
+
+
+ 
+    <div class="form-group">
+        <label class="control-label"></label>
+        <input name="otherinput.Text" class="form-control" value="create btn" />
+        <span class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="button" />
+    </div>
+</form>
